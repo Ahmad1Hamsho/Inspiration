@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Eater|family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Molle:400i&display=swap');
+body {
+  background-image: url(../img/lum3n--RBuQ2PK_L8-unsplash.jpg);
+  background-size: 100%;
+}
+.m{margin-bottom: 100px;
+    max-height: 40px;}
+h1 {
+    margin: 0px;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name  : header;
+  animation-duration: 3s;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: -4px 3px 2px rgb(253, 253, 252);
+  font-family: 'Eater', cursive;
+  color: rgb(0, 0, 0);
+}
+@keyframes header {
+  0% {
+    font-size: 50px;
+  }
+  50% {
+    font-size: 60px;
+  }
+  100% 
+}
+
+.intro img{
+  position: relative;
+  bottom: 300px;
+  left: 500px;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.1);
+}
+section img:hover {
+	border-radius: 200px;
+	padding: 10px;
+  box-shadow: 5px 5px 3px rgba(253, 1, 1, 0.2), -3px -3px 3px rgba(3, 215, 253, 0.1);
+  cursor: pointer;
+}
+section img:active {
+  animation-name: img;
+  animation-duration: 1s;
+	border-radius: 200px;
+	padding: 10px;
+  box-shadow: 5px 5px 3px rgba(253, 1, 1, 0.2),-3px -3px 3px rgba(3, 215, 253, 0.1);
+}
+@keyframes img{
+  0%{
+   border-radius: 100px;
+  }
+  25%{
+   border-radius: 150px;
+  }
+  75%{
+    border: 200px;
+  }
+  100%
+}
+
+.editor {
+  font-weight: bolder;
+  height: 600px;
+  width: 280px;
+  position: relative;
+  left: 1240px;
+  bottom: 910px;
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Kaushan Script', cursive;
+  border: none;
+  overflow: auto;
+}
+
+
+
+.editor div:nth-child(5)::before{
+  content: "🐂 ";
+  font-size: 40px;
+
+}
+
+.editor div::after{
+  content: ".";
+  color: red;
+  font-size: 40px;
+}
+
+.editor div::first-letter{
+  letter-spacing: 10px;
+  color: rgb(14, 1, 134) ;
+  font-size: 30px;
+  font-family: 'Molle', cursive;
+}
+.editor div:hover{
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.editor::-webkit-scrollbar{
+  display: none;
+}
+
+.editor::first-line{
+  color: red;
+}
+
+div:nth-of-type(5){
+background-color: green;
+
+
+}
+
+.editor div:first-child {
+   background-color: rgba(0, 0, 0, 0.568);
+    /* opacity: 0.9; */
+    border-radius: 10px;
+  }
+
+.editor div:nth-child(odd) {
+   background-color: gray
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+  .editor div:nth-child(even) {
+    background-color: rgba(172, 172, 172, 0.26);
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+   .editor div:nth-child(3n) {
+    background-color: rgba(190, 190, 190, 0.555);
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+.editor div:last-child {
+    background-color: rgb(1, 217, 255);
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+ul {
+ margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+  margin-top: 10px;
+    box-sizing: border-box;
+    width: 15em;
+    height: 3em;
+    font-size: 20px;
+    border-radius: 0.8em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 3    em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+    background: linear-gradient(to right, orange, tomato);
+    text-align: left;
+    padding-left: 10%;
+    transform: perspective(500px) rotateY(45deg);
+}
+
+ul li:nth-child(even) {
+    background: linear-gradient(to left, orange, tomato);
+    text-align: right;
+    padding-right: 10%;
+    transform: perspective(500px) rotateY(-45deg);
+}
+
+ul li:nth-child(odd):hover {
+    transform: perspective(200px) rotateY(45deg);
+    padding-left: 5%;
+}
+
+ul li:nth-child(even):hover {
+    transform: perspective(200px) rotateY(-45deg);
+    padding-right: 5%;
+}
+li a{
+  font-size: 30px;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* a:visited{
+ color: blue; 
+} */
+
+#follow {
+  max-height: 20px;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: follow;
+  position: relative;
+  top: 100px;
+  left: 90px;
+  transform: rotate(10deg);
+  margin: 0px;
+  text-align: left;
+  opacity: 1;
+  /* transform: rotate(-13deg); */
+  color: transparent;
+  text-shadow: 0px 6px 3px rgba(233, 25, 6, 0.788),
+    -3px 20px 7px rgb(255, 255, 255), 3px -20px 7px rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: "Sriracha", cursive;
+}
+@keyframes follow{
+    0%{color: black;}
+    25%{color: rgb(217, 255, 0);
+    font-size: 50px;}
+    50%{color: rgb(43, 255, 1);
+    font-size: 40px;}
+    100%
+}
+p ~a img {
+  margin: auto 10px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.name {
+  color: white;
+  margin: auto 10px;
+  text-align: left;
+  text-shadow: 5px 5px 5px rgb(121, 253, 12);
+  font-size: 40px;
+  font-family: "Sriracha", cursive;
+}
+footer{
+  position: relative;
+  bottom: 940px;
+}
+
+a:link
+{
+text-decoration:none;
+}
